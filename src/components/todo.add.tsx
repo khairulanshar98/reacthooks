@@ -13,7 +13,7 @@ export const TodoAdd: React.FC<TodoAddProps> = (props) => {
     const [description, setDescription] = React.useState<string>('');
 
     return (
-        <div style={{ marginBottom: "30px" }}>
+        <div style={{ marginBottom: "40px" }}>
             <Form>
                 <Form.Group controlId="NewTask">
                     <Form.Label>New Task</Form.Label>
