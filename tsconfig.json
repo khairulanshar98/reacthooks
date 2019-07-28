@@ -3,7 +3,7 @@
     "allowJs": true,
     "skipLibCheck": false,
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": false,
+    "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noImplicitAny": false,
@@ -21,6 +21,8 @@
       "components/*": [
         "src/components/*"
       ],
-    }
+    },
+    "experimentalDecorators": true,
+    "sourceMap": true,
   }
 }

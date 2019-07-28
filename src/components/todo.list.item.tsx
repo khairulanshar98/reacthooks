@@ -58,9 +58,9 @@ export const TodoListItem: React.FC<TodoListItemProps> = (props) => {
     return (
         <Alert show={show} onClose={() => handleClose()} variant={"info"} dismissible>
             <Alert.Heading>Task: {todo.task}</Alert.Heading>
-            <p>
-                Description: {todo.description.split("\n").map(text => <div>{text}</div>)}
-            </p>
+            <div>
+                Description: {todo.description.split("\n").map((text, idx) => <p key={idx}>{text}</p>)}
+            </div>
             <p>
                 Status: <span style={{ fontSize: '14px', color: todo.isComplete ? 'green' : 'red' }} className={'glyphicon glyphicon-' + (todo.isComplete ? 'ok-sign' : 'remove-sign')}></span>
             </p>
